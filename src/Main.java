@@ -5,12 +5,11 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println(daniil(12,332,1));
 
 
     }
 
-    public static double daniil(double firstNumber, double secondNumber, int action) {
+    public static double sumAndDif(double firstNumber, double secondNumber, int action) {
         switch (action) {
             case 1:
                 return firstNumber + secondNumber;
