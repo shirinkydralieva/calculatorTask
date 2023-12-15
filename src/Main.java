@@ -16,16 +16,6 @@ public class Main {
 
     }
 
-    public static double sumAndDif(double firstNumber, double secondNumber, int action) {
-        switch (action) {
-            case 1:
-                return firstNumber + secondNumber;
-            case 2:
-                return firstNumber - secondNumber;
-            default:
-                return 0;
-        }
-    }
 
     public static double divAndMulti(double num1, double num2, int action) {
         switch (action) {
