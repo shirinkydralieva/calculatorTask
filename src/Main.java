@@ -13,7 +13,30 @@ public class Main {
 
         int choose = scanner.nextInt();
 
+        int num = 0;
+        while (num != 0) {
 
+            switch (num) {
+                case 1:
+                    System.out.println();
+                    break;
+                case 2:
+                    System.out.println();
+                    break;
+                case 3:
+                    System.out.println();
+                    break;
+                case 4:
+                    System.out.println();
+                    break;
+                case 0:
+                    System.out.println("YOU'RE OUT");
+                    break;
+                default:
+                    System.out.println("ERROR, TRY AGAIN!");
+                    break;
+            }
+        }
 
 
     }
