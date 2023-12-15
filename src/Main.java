@@ -6,28 +6,27 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Введите  первое число: ");
-        int scanNum1 = scanner.nextInt();
+        double scanNum1 = scanner.nextInt();
         System.out.print("Введите второе число: ");
-        int scanNum2 = scanner.nextInt();
+        double scanNum2 = scanner.nextInt();
         System.out.println("Выберите операцию:\n 1.+\n 2.-\n 3.*\n 4./ ");
 
         int choose = scanner.nextInt();
 
-        int num = 0;
-        while (num != 0) {
+        while (choose != 0) {
 
-            switch (num) {
+            switch (choose) {
                 case 1:
-                    System.out.println();
+                    System.out.println(sumAndDif(scanNum1, scanNum2, 1));
                     break;
                 case 2:
-                    System.out.println();
+                    System.out.println(sumAndDif(scanNum1, scanNum2, 2));
                     break;
                 case 3:
-                    System.out.println();
+                    System.out.println(divAndMulti(scanNum1, scanNum2, 1));
                     break;
                 case 4:
-                    System.out.println();
+                    System.out.println(divAndMulti(scanNum1, scanNum2, 2));
                     break;
                 case 0:
                     System.out.println("YOU'RE OUT");
@@ -62,5 +61,5 @@ public class Main {
                 return 0;
 
         }
-
+    }
 }
