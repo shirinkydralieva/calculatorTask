@@ -4,27 +4,20 @@ import java.util.Scanner;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Put the first number - ");
-        double firstNumber = scanner.nextInt();
+        System.out.println(daniil(12,332,1));
 
-        System.out.print("Put the second number - ");
-        double secondNumber = scanner.nextInt();
 
-        System.out.print("1.\"+\"\n2.\"-\"\nPut the action - ");
+    }
 
-        int action = scanner.nextInt();
-
-        switch (action){
+    public static double daniil(double firstNumber, double secondNumber, int action) {
+        switch (action) {
             case 1:
-                System.out.println("Result of sum = " + (firstNumber + secondNumber));
-                break;
+                return firstNumber + secondNumber;
             case 2:
-                System.out.println("Result of difference = " + (firstNumber - secondNumber));
+                return firstNumber - secondNumber;
             default:
-                System.out.print("Wrong kind of action!");
+                return 0;
         }
-
     }
 }
