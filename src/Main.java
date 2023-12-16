@@ -18,15 +18,19 @@ public class Main {
             switch (choose) {
                 case 1:
                     System.out.println(sumAndDif(scanNum1, scanNum2, 1));
+                    choose = 0;
                     break;
                 case 2:
                     System.out.println(sumAndDif(scanNum1, scanNum2, 2));
+                    choose = 0;
                     break;
                 case 3:
                     System.out.println(divAndMulti(scanNum1, scanNum2, 1));
+                    choose = 0;
                     break;
                 case 4:
                     System.out.println(divAndMulti(scanNum1, scanNum2, 2));
+                    choose = 0;
                     break;
                 case 0:
                     System.out.println("YOU'RE OUT");
